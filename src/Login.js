@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Modal from './Modal'
+import Header from './Header'
 import { useNavigate } from "react-router-dom"
 
 /*임시 유저 아이디*/
@@ -48,6 +49,7 @@ export default function Login() {
 
   return(
     <div className='page'>
+      <Header />
       <div className='titleWrap'>
         ECE-Reservation
       </div>
