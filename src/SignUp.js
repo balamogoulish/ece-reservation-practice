@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SignUp =() => {
+function SignUp(){
   return (
     <div>
       <p>회원가입</p>

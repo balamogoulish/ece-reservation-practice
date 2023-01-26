@@ -17,8 +17,8 @@ export default function Login() {
   
   const navigate = useNavigate();
 
-  const navigateToSignUp = () => {
-    navigate("/signUp");
+  const navigateToAgree = () => {
+    navigate("/agreeInform");
   }
 
   /*이용안내 모달 함수*/
@@ -87,7 +87,7 @@ export default function Login() {
           <button onClick={confirmLogin} disabled={notBtnAllow} className='button_loginPage'>로그인</button>
         </div>
         <div >
-          <button onClick={navigateToSignUp} className='button_loginPage'>회원가입</button>
+          <button onClick={navigateToAgree} className='button_loginPage'>회원가입</button>
         </div>
         <div >
         <React.Fragment>
