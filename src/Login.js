@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Modal from './Modal'
 
 /*임시 유저 아이디*/
 const User={
@@ -11,6 +12,15 @@ export default function Login() {
   const [pw, setPw] = useState('');
 
   const [notBtnAllow, setNotBtnAllow] = useState(true);
+  const [modalOpen, setModalOpen] = useState(false);
+
+  /*이용안내 모달 함수*/
+  const openModal = () => {
+    setModalOpen(true);
+  };
+  const closeModal = () => {
+    setModalOpen(false);
+  };
 
   /*아이디와 비밀번호가 모두 입력된 경우 로그인 버튼 활성화*/
   useEffect(() => {
@@ -72,7 +82,12 @@ export default function Login() {
           <button className='button_loginPage'>회원가입</button>
         </div>
         <div >
-          <button className='button_loginPage'>이용안내</button>
+        <React.Fragment>
+          <button onClick={openModal} className='button_loginPage'>이용안내</button>
+          <Modal open={modalOpen} close={closeModal} header="이용안내">
+            팝업창입니다. 쉽게 만들 수 있어요. 같이 만들어봐요!
+          </Modal>
+        </React.Fragment>
         </div>
       </div>
       
