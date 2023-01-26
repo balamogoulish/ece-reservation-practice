@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Modal from './Modal'
+import { useNavigate } from "react-router-dom"
 
 /*임시 유저 아이디*/
 const User={
@@ -10,9 +11,14 @@ const User={
 export default function Login() {
   const [id, setId] = useState('');
   const [pw, setPw] = useState('');
-
   const [notBtnAllow, setNotBtnAllow] = useState(true);
   const [modalOpen, setModalOpen] = useState(false);
+  
+  const navigate = useNavigate();
+
+  const navigateToSignUp = () => {
+    navigate("/signUp");
+  }
 
   /*이용안내 모달 함수*/
   const openModal = () => {
@@ -79,7 +85,7 @@ export default function Login() {
           <button onClick={confirmLogin} disabled={notBtnAllow} className='button_loginPage'>로그인</button>
         </div>
         <div >
-          <button className='button_loginPage'>회원가입</button>
+          <button onClick={navigateToSignUp} className='button_loginPage'>회원가입</button>
         </div>
         <div >
         <React.Fragment>
