@@ -1,10 +1,15 @@
 import React from 'react';
+import Header from './Header';
 
 function SignUp(){
   return (
-    <div>
-      <p>회원가입</p>
+    <div className='page'>
+      <Header />
+      <div className='titleWrap'>
+        회원가입창
+      </div >
     </div>
+    
   )
 }
 

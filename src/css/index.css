@@ -24,7 +24,8 @@
 }
 
 .inputTitle{
-  margin-left: 35px;
+  margin-left: 10%;
+  margin-right: 10%;
   font-size: 12px;
   font-weight: 600;
   color: #262626;
@@ -35,8 +36,8 @@
   border-radius: 8px;
   padding:16px;
   margin-top: 8px;
-  margin-left: 30px;
-  margin-right: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
   background-color: white;
   border: 1px solid #e2e0e0;
 }
@@ -89,14 +90,14 @@
   color:white;
 }
 
-.header{
-  height : 60px;
-  background-color: rgb(0, 91, 202);
-  color : #fff;
+.checkBox{
+  margin-top: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
-.logoImage{
-  margin-top: 7px;
-  margin-left: 7px;
-  width: 80px;
+.content{
+  margin-top: 40px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
